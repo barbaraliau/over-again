@@ -1,0 +1,30 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+}
+
+.background {
+	height: 100%;
+	width: 100%;
+	background-color: rgb(212, 212, 212);
+}
+
+header {
+	height: 20%;
+	background-color: rgb(100,100,100);
+}
+
+.main {
+	height: 70%;
+	width: 70%;
+	margin: 0 auto;
+	background-color: rgb(255, 255, 255);
+}
+
+footer {
+	height: 10%;
+	width: 70%;
+	margin: 0 auto;
+	background-color: rgb(20, 20, 20);
+}

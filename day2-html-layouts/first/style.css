@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+}
+
+body {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.red {
+  background: rgb(208, 2, 27);
+}
+
+.blue {
+  background: rgb(74, 144, 226);
+}
+
+.grey {
+  background: rgb(74, 74, 74);
+}
+
+header {
+  height: 100px;
+  margin: 10px;
+}
+
+.small-box {
+  height: 100%;
+  width: 32%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.middle {
+  margin: 0 15px;
+}
+
+.text-box {
+  height: 300px;
+  margin: 20px 10px;
+  clear: left;
+  font-family: sans-serif;
+  line-height: 1.5em;
+}
+
+.big-box-one {
+  height: 200px;
+  width: 32%;
+  margin-left: 10px;
+  float: left;
+}
+
+.big-box-two {
+  height: 200px;
+  width: 65%;
+  margin-right: 10px;
+  float: left;
+}
+
+.bottom-box {
+  height: 20%;
+  clear: both;
+  position: relative;
+  top: 20px;
+  margin: 0 15px 20px 10px;
+  box-sizing: border-box;
+}
+
+.inner-red {
+  height: 100%;
+  width: 33%;
+  position: absolute;
+  right: 0;
+}
+
+.inner-grey {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+

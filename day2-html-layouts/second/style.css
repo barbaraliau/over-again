@@ -1,0 +1,112 @@
+/** {
+	border: 1px solid red;
+}*/
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+body {
+	background: rgb(221, 221, 221);
+	font-family: sans-serif;
+	font-size: 1em;
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+
+.white {
+	background: rgb(255, 255, 255);
+}
+
+.red {
+	background: rgb(208, 2, 27);
+}
+
+.blue {
+	background: rgb(74, 144, 226);
+}
+
+.grey {
+	background: rgb(51, 51, 51);
+}
+
+.top {
+	height: 30%;
+	width: 100%;
+	min-height: 200px;
+	padding: 20px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.top p {
+	overflow-y: scroll;
+	top: 0;
+	height: 80px;
+}
+
+.button-holder {
+	height: 40px;
+	position: absolute;
+	bottom: 20px;
+}
+
+.button {
+	height: 100%;
+	width: 100px;
+	margin-right: 10px;
+	font-size: 1.5em;
+	font-weight: lighter;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+}
+
+.image-holder {
+	height: 60%;
+	min-height: 400px;
+	margin: 30px 0;
+	padding: 20px;
+}
+
+.bacon-holder {
+	height: 65%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bacon-placeholder {
+	color: white;
+	font-size: 4em;
+}
+
+.image-holder p {
+	height: 30%;
+	overflow: scroll;
+}
+
+.footer {
+	height: 5%;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	padding: 25px;
+	margin: 0 -40px;
+	color: rgb(255, 255, 255);
+}
+
+.link-container {
+	float: right;
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+.link-container a {
+	margin: 15px;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+}

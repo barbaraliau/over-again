@@ -1,0 +1,67 @@
+/** {
+	outline: 1px solid red;
+}*/
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	overflow: auto;
+}
+
+nav {
+	position: relative;
+	width: 80%;
+	padding: 5% 10% 0 10%;
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+.intro {
+	line-height: 30px;
+}
+.welcome {
+	text-align: right;
+	font-weight: bold;
+}
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	width: 80%;
+	margin: 0 10%;
+}
+
+.cell {
+	height: 25%;
+	width: 25%;
+	padding: 20px;
+
+}
+
+a:link {
+	text-decoration: none;
+}
+
+img {
+ 	max-width: 100%;
+
+ }
+
+.footer {
+	position: relative;
+	border-top: 1px solid black;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 12px;
+	font-family: sans-serif;
+	line-height: 20px;
+}
+
+.link {
+	margin-left: 20px;
+}
+
