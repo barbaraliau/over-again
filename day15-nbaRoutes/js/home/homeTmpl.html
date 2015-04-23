@@ -1,0 +1,47 @@
+<div class="inner-container">
+	<div class="team-container">
+		<img src="images/jazz-logo.png">
+		<h4>Utah Jazz </br> Wins: {{jazzData.wins}} Losses: {{jazzData.losses}}</h4>
+		<div class="together-game" ng-repeat="game in jazzData" ng-class="{'even' : $index % 2 === 0}">
+      Date: {{game.createdAt | date: 'medium'}} <br />
+      <!--
+        The below question marks should render like this
+        Utah Jazz (Or name of Team) - Score of the particular Game
+        Opponent Name - Opponent Score for that Game
+      -->
+
+      Utah Jazz - {{game.homeTeamScore}}<br />
+      {{game.opponent}} - {{game.opponentScore}} </br />
+    </div>
+  </div>
+	<div class="team-container">
+		<img src="images/lakers-logo.png">
+		<h4>Los Angeles Lakers </br> Wins: {{lakersData.wins}} Losses: {{lakersData.losses}}</h4>
+		<div class="together-game" ng-repeat="game in lakersData" ng-class="{'even' : $index % 2 === 0}">
+      Date: {{game.createdAt | date: 'medium'}} <br />
+      <!--
+        The below question marks should render like this
+        Utah Jazz (Or name of Team) - Score of the particular Game
+        Opponent Name - Opponent Score for that Game
+      -->
+
+      Los Angeles Lakers - {{game.homeTeamScore}}<br />
+      {{game.opponent}} - {{game.opponentScore}} </br />
+    </div>
+   </div>
+	<div class="team-container">
+		<img src="images/heat-logo.png">
+		<h4>Miami Heat </br> Wins: {{heatData.wins}} Losses: {{heatData.losses}}</h4>
+		<div class="together-game" ng-repeat="game in heatData" ng-class="{'even' : $index % 2 === 0}">
+      Date: {{game.createdAt | date}} <br />
+      <!--
+        The below question marks should render like this
+        Utah Jazz (Or name of Team) - Score of the particular Game
+        Opponent Name - Opponent Score for that Game
+      -->
+
+      Miami Heat - {{game.homeTeamScore}}<br />
+      {{game.opponent}} - {{game.opponentScore}} </br />
+    </div>
+  </div>
+</div>

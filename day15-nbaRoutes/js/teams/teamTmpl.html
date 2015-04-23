@@ -1,0 +1,33 @@
+<div class="inner-container">
+  <div class="logo">
+    <img ng-src="{{logoPath}}">
+  </div>
+  <div class="record">
+      <h1> Wins: {{teamData.wins}} Losses: {{teamData.losses}} </h1>
+  </div>
+  <div class="btn" ng-click="toggleNewGameForm()"> Add a New Game </div>
+  <form ng-show="showNewGameForm" class="form">
+    <span class="large">Opponent:</span> <br />
+
+    <select ng-model="newGame.opponent" ng-options="team for team in teams" class="form-control" required name="team"></select> <br /><br />
+
+    <button ng-model="thisButton"></button>
+
+    <span class="large">Score:</span> <br /> {{homeTeam}}: <input class="inputs" type="text" ng-model="newGame.homeTeamScore" placeholder="Home Score">
+    {{newGame.opponent}}: <input type="text" class="inputs" ng-model="newGame.opponentScore" placeholder="Opponent Score"> <br /><br />
+    <button ng-click="submitGame()"> Submit Game </button>
+  </form>
+  <div class="team-data">
+    <div class="game" ng-repeat="game in teamData" ng-class="{'even' : $index % 2 === 0}">
+      Date: {{game.createdAt | date: 'medium'}} <br />
+      <!--
+        The below question marks should render like this
+        Utah Jazz (Or name of Team) - Score of the particular Game
+        Opponent Name - Opponent Score for that Game
+      -->
+
+      {{homeTeam}} - {{game.homeTeamScore}}<br />
+      {{game.opponent}} - {{game.opponentScore}} </br />
+    </div>
+  </div>
+</div>
