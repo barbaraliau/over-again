@@ -2,8 +2,9 @@ var app = angular.module('nbaRoutes');
 
 app.controller('teamCtrl', function($scope, $routeParams, teamService, teamData){
 
-	console.log('teamCtrl: $routeParams.team: ', $routeParams.team);
-	console.log('teamCtrl: teamData(resolved): ', teamData);
+	//console.log('teamCtrl: $routeParams.team: ', $routeParams.team);
+	//console.log('teamCtrl: teamData(resolved): ', teamData);
+	//console.log($scope);
 
 	$scope.teamData = teamData;
 	$scope.newGame = {
@@ -40,7 +41,5 @@ app.controller('teamCtrl', function($scope, $routeParams, teamService, teamData)
 				});
 		});
 	};
-
-	console.log($scope);
 
 });

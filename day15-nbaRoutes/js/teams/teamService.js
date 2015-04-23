@@ -38,7 +38,7 @@ app.service('teamService', function($http, $q){
 			}
 			results.wins = wins;
 			results.losses = losses;
-			console.log('results: ', results);
+			//console.log('results: ', results);
 			dfd.resolve(results);
 		});
 		return dfd.promise;
